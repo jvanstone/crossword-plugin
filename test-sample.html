@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Load Stylesheets 
+          
+            1. Bootstrap
+            2. Style
+        
+        -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css?ver=5.6.1" />
+        <link rel="stylesheet" href="./assets/css/crossword.css" />
+
+        <!-- Load Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+ <body>
+
+    <div id="printableArea">
+
+        <h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
+        <div id="puzzle_container" class="container-fluid">
+            <table id="puzzle" class="table-responsive">
+            </table>
+    
+            <div id="puzzle-img">
+                <p> Please note: the Digital Crossword puzzle currently works only with iPads and Desktops. You are more then welcome to print the crossword out if you wish.</p>
+      
+                <img src="/assets/img/crossword.png" class="img-fluid" alt="crossword preview" />
+            </div>
+        
+        <div id="buttons_container" class="col-12 d-flex flex-wrap justify-content-around">
+            <button id="clue" class="mobile-hide">Clue</button>
+            <button id="check" class="mobile-hide">Check</button>
+            <button id="solve" class="mobile-hide">Solve</button>
+            <button onclick="window.print();return false;" class="mobile-show" />Print Me</button>
+            <button id="clear_all" class="mobile-hide">Clear All</button>
+        </div>
+
+        <div id="hints_container" class="col-12 d-flex flex-wrap">
+            <div class="card col-md-5 hints">
+                <div class="header"><h3>Vertical</h3></div>
+                <div id="vertical_hints_container" class="card-body"></div>
+            </div>
+            <div class="card col-md-5 hints"> 
+                <div class="header"><h3>Horizontal</h3></div>
+                <div id="horizontal_hints_container" class="card-body"></div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+    <!-- Load Javascripts 
+    
+      1.  The Crossword
+      2.  Bootstrap 
+    
+    -->
+    <script src="assets/js/crossword2.js"></script> 
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js?ver=5.6.1' id='Javascript-js'></script>
+ </body>
+
+</html>
