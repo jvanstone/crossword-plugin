@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Crossword Plugin - Canadian Guide Add-ON
+Plugin Name: Crossword Plugin - Canada Info Add-ON
 Plugin URI: 
-Description: Adds a plug-in to the Canadian Guide
+Description: Adds a plug-in to the Canada Info
 Version: 1
 Author: Vanstone Online
 Author URI: https://vanstoneonline.com

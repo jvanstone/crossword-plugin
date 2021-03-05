@@ -25,22 +25,23 @@ var grid = [
 ];
 
 var clues = [
-	'American bordering waterfall',
-	'Which holiday falls on July 1st?',
-	'Capital city of Canada',
-	'Ice skating sport',
-	'Castle located in Toronto',
-	'The first hockey team',
-	'What is made from fries, gravy, and cheese',
-	'Hockey player turned coffee maker',
-	'What is the major language spoken in Canada?',
-	'What is the center of the Canadian flag?',
-	'Canada federal police',
-	'What is the highest mountain in Canada',
-	'Reynolds Canadian Deadpool actor',
-	'What is our dollar coin called',
-	'How many Provinces in Canada',
-	'Dam making mammal'
+	'American bordering waterfall', //1
+	'Which holiday falls on July 1st?', //2
+	'Capital city of Canada', //3
+	'Ice skating sport', //4
+	'Castle located in Toronto', //5
+	'The first hockey team', //6
+	'What is made from fries, gravy, and cheese', //7
+	'Hockey player turned coffee maker', //8
+	'What is the tallest tower in Canada', //9
+	'What is the major language spoken in Canada?', //10
+	'What is the center of the Canadian flag?', //11
+	'Canada federal police', //12
+	'What is the highest mountain in Canada', //13
+	'Reynolds Canadian Deadpool actor', //14
+	'What is our dollar coin called', //15
+	'How many Provinces in Canada', //16
+	'Dam making mammal' //17
 ];
 
 var answers = [
