@@ -34,7 +34,7 @@ var clues = [
 	'What is made from fries, gravy, and cheese', //7
 	'Hockey player turned coffee maker', //8
 	'What is the tallest tower in Canada', //9
-	'What is the major language spoken in Canada?', //10
+	'What is the most common language spoken in Canada?', //10
 	'What is the center of the Canadian flag?', //11
 	'Canada federal police', //12
 	'What is the highest mountain in Canada', //13
@@ -310,23 +310,3 @@ function showClue( question_number, i, j ) {
 		$( '#puzzle tr:nth-child(' + ( j + 1 ) + ') td:nth-child(' + ( i + 1 ) + ') div' ).text( answer_letters[j - startpos[1]]).css( 'color', 'initial' );
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
