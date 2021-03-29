@@ -28,19 +28,19 @@
   
     min-height: 100%;
 	border: 1px solid black;
-}
-#puzzle th {
+ 
+	th {
     padding: 0;
     border: 0 !important;
-}
+     }
 
-#puzzle   td { 
+    td { 
 	position:relative; 
 	padding: 0;
     border: 0 !important;
 	}
 
-.square{
+	.square{
     margin: 0;
 	padding: 0;
     
@@ -49,34 +49,34 @@
 	
 	border-collapse: collapse;
     position: relative;
+	}
+
+	.empty{
+		background-color:rgba(255, 255, 255, 0.235);
+	}
+
+	.letter{
+		border: 1px solid black;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.active{ border: 2px solid rgb(88, 15, 72);
+			background-color: whitesmoke;
+			color: black; }
+
+	.question_number{
+		position: absolute;
+		font-size: 12px;
+		color: grey;
+		left: 3px;
+		top: 3px;
+	}
+
+	.hints {
+		margin: 1rem;
+	}
 }
-
-.empty{
-    background-color:rgba(255, 255, 255, 0.235);
- }
-
-.letter{
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-}
-
-.active{ border: 2px solid rgb(88, 15, 72);
-         background-color: whitesmoke;
-         color: black; }
-
-.question_number{
-    position: absolute;
-    font-size: 12px;
-    color: grey;
-    left: 3px;
-    top: 3px;
-}
-
-.hints {
-    margin: 1rem;
-}
-
 /****** 
  
  This Container holds all the buttons
