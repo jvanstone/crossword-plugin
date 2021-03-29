@@ -8,6 +8,11 @@
 
 *******/
 
+/** RESET Borders from WordPress **/
+table td, table th, .wp-block-table td, .wp-block-table th {
+    padding: 0;
+    border: 0;
+}
 #puzzle_container{
     margin: 1rem auto;
     padding: 1rem;
