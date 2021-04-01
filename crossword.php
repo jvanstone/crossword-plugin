@@ -34,8 +34,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 		// Bulk Add HTML to the Function.
 		ob_start(); ?>
 		</article>
-		<article style="margin-top:-8rem;">
-		<div id="printableArea">
+		<article id="printableArea" style="margin-top:-8rem;">
 			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
 			<div id="puzzle_container" class="container-fluid">
 				<table id="puzzle" class="table-responsive">
@@ -65,7 +64,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 						<div id="horizontal_hints_container" class="card-body"></div>
 					</div>
 				</div>
-			</div>
+		
 
 			<?php
 			return ob_get_clean();
