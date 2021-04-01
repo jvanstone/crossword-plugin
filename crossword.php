@@ -34,7 +34,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 		// Bulk Add HTML to the Function.
 		ob_start(); ?>
 		</article>
-		<article id="printableArea" style="margin-top:-8rem;">
+		<article id="printableArea" class="alignwide" style="margin-top:-8rem;">
 			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
 			<div id="puzzle_container" class="container-fluid">
 				<table id="puzzle" class="table-responsive">
