@@ -45,23 +45,23 @@ var clues = [
 ];
 
 var answers = [
-	'niagarafalls', //1
-	'canadaday', //2
-	'ottawa', //3
-	'hockey', //4
-	'casaloma', //5
-	'montrealcanadians', //6
-	'poutine', //7
-	'timhortons', //8
-	'cntower', //9
-	'english', //10
-	'mapleleaf', //11
-	'mounties', //12
-	'mountlogan', //13
-	'ryan', //14
-	'loonie', //15
-	'ten', //16
-	'beaver' //17
+	'NIAGARAFALLS', //1
+	'CANADADAY', //2
+	'OTTAWA', //3
+	'HOCKEY', //4
+	'CASALOMA', //5
+	'MONTREALCANADIANS', //6
+	'POUTINE', //7
+	'TIMHORTONS', //8
+	'CNTOWER', //9
+	'ENGLISH', //10
+	'MAPLELEAF', //11
+	'MOUNTIES', //12
+	'MOUNTLOGAN', //13
+	'RYAN', //14
+	'LOONIE', //15
+	'TEN', //16
+	'BEAVER' //17
 ];
 
 /****
