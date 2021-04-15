@@ -14,7 +14,7 @@
     margin: 1rem auto;
     padding: 1rem;
 	border: 0px solid #000;
-    
+  
 }
 
 /******
@@ -32,7 +32,7 @@
 	th {
     padding: 0;
     border: 0 !important;
-     }
+    }
 
     td { 
 	position:relative; 
@@ -61,9 +61,11 @@
 		cursor: pointer;
 	}
 
-	.active{ border: 2px solid rgb(88, 15, 72);
-			background-color: whitesmoke;
-			color: black; }
+	.active{ 
+        border: 2px solid rgb(88, 15, 72);
+		background-color: whitesmoke;
+		color: black; 
+    }
 
 	.question_number{
 		position: absolute;
@@ -88,12 +90,12 @@
     padding: 2rem;
 }
 
-/* Hide the Mobile only blocks */
-#puzzle-img { //display: none;}
+/* Hide the Mobile only blocks 
+#puzzle-img { display: none; } */
 
 .printOnly {
     visibility: hidden;
- }
+}
 
 
 /****** 
@@ -105,7 +107,6 @@
 #hints_container{
 	border: 1px solid #000;
     background-color: beige;
-   
 }
 
 
@@ -113,20 +114,20 @@
 
 Hide the Crossword and show only a message and print option. 
 
-******/
+
 
  
 @media screen and (max-width:400px) {
  
-    //#puzzle, #hints_container, .mobile-hide  { display: none !important;}
+    #puzzle, #hints_container, .mobile-hide  { display: none !important; }
   
-   // #puzzle-img { display: block; }
+    #puzzle-img { display: block; }
     
 
-    //#puzzle-img p { 
-     //   border: 1px solid #000;
+    #puzzle-img p { border: 1px solid #000; }
   
 }
+******/
 
 
 
@@ -139,12 +140,10 @@ Hide the Crossword and show only a message and print option.
 
 @media print { 
 
-  
     #puzzle_container{
         margin: 1rem auto;
         padding: 1rem;
         border: 1px solid #000;
-        
     }
     
 
@@ -165,7 +164,7 @@ Hide the Crossword and show only a message and print option.
         border: 1px solid black;
     }
     
-    td{ position:relative; }
+    td { position:relative; }
     
     .square{
         margin: 0;
@@ -206,7 +205,7 @@ Hide the Crossword and show only a message and print option.
     
     *******/
     
-    .no-print, .post, #buttons_container{ visibility:hidden; display: none;  }
+    .no-print, .post, #buttons_container { visibility:hidden; display: none;  }
     
     /****** 
      
