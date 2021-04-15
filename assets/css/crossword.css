@@ -44,6 +44,7 @@
   height: 30px;
   border-collapse: collapse;
   position: relative;
+  text-transform: uppercase;
 }
 
 #puzzle .empty {
@@ -54,12 +55,14 @@
   border: 1px solid black;
   text-align: center;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 #puzzle .active {
   border: 2px solid #580f48;
   background-color: whitesmoke;
   color: black;
+  text-transform: uppercase;
 }
 
 #puzzle .question_number {

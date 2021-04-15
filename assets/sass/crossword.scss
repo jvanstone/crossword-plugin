@@ -49,6 +49,7 @@
 	
 	border-collapse: collapse;
     position: relative;
+    text-transform: uppercase;
 	}
 
 	.empty{
@@ -65,7 +66,8 @@
 	.active{ 
         border: 2px solid rgb(88, 15, 72);
 		background-color: whitesmoke;
-		color: black; 
+		color: black;
+        text-transform: uppercase;
     }
 
 	.question_number{
