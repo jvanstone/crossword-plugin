@@ -33,7 +33,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 
 		// Bulk Add HTML to the Function.
 		ob_start(); ?>
-		</article>
+	
 		<div id="printableArea" class="alignwide">
 			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
 			<div id="puzzle_container" class="container-fluid">
