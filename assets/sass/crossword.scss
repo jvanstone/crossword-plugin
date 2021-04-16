@@ -1,6 +1,6 @@
 /******
 
-  Crossword Puzzle 
+  Crossword Puzzle
   Author: Jason Vanstone
   Company: VanstoneOnline
   uses: bootstrap, css
@@ -30,25 +30,25 @@
 	border: 1px solid black;
  
 	th {
-    padding: 0;
-    border: 0 !important;
+		padding: 0;
+		border: 0 !important;
     }
 
     td { 
-	position:relative; 
-	padding: 0;
-    border: 0 !important;
+		position:relative; 
+		padding: 0;
+		border: 0 !important;
 	}
 
 	.square{
-    margin: 0;
-	padding: 0;
-    
-	width:30px;
-	height:30px;
-	
-	border-collapse: collapse;
-    position: relative;
+		margin: 0;
+		padding: 0;
+		
+		width:30px;
+		height:30px;
+		
+		border-collapse: collapse;
+		position: relative;
 	}
 
 	.empty{
@@ -151,7 +151,7 @@ Hide the Crossword and show only a message and print option.
     
 
     .printOnly {
-       visibility: visible ;
+       visibility: visible !important;
     }
     
     /******

@@ -35,26 +35,21 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 		ob_start(); ?>
 
 		<div id="printableArea" class="alignwide">
-			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
+<!-- 			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
+-->
 			<div id="puzzle_container" class="container-fluid">
 				<table id="puzzle" class="table-responsive">
 				</table>
-
-				<div id="puzzle-img">
-					<p> Please note: the Digital Crossword puzzle currently works only with iPads and Desktops. You are more then welcome to print the crossword out if you wish.</p>
-
-<!-- 					<img src="<?php // echo plugin_dir_url( __FILE__ ); ?>assets/img/crossword.png" class="img-fluid" alt="crossword preview" />
--->				</div>
 
 				<div id="buttons_container" class="col-12 d-flex flex-wrap justify-content-around">
 					<button id="clue" class="mobile-hide">Clue</button>
 					<button id="check" class="mobile-hide">Check</button>
 					<button id="solve" class="mobile-hide">Solve</button>
-					<button onclick="window.print();return false;" class="mobile-show" />Print Me</button>
-					<button id="clear_all" class="mobile-hide">Clear All</button>
+<!-- 					<button onclick="window.print();return false;" class="mobile-show" />Print Me</button>
+ -->					<button id="clear_all" class="mobile-hide">Clear All</button>
 				</div>
 
-				<div id="hints_container" class="col-12 d-flex flex-wrap">
+				<div id="hints_container" class="col-12">
 					<div class="card col-md-5 hints">
 						<div class="header"><h3>Vertical</h3></div>
 						<div id="vertical_hints_container" class="card-body"></div>
