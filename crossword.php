@@ -33,7 +33,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 
 		// Bulk Add HTML to the Function.
 		ob_start(); ?>
-	
+
 		<div id="printableArea" class="alignwide">
 			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
 			<div id="puzzle_container" class="container-fluid">
@@ -43,8 +43,8 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 				<div id="puzzle-img">
 					<p> Please note: the Digital Crossword puzzle currently works only with iPads and Desktops. You are more then welcome to print the crossword out if you wish.</p>
 
-					<img src="<?php echo plugin_dir_url( __FILE__ ); ?>assets/img/crossword.png" class="img-fluid" alt="crossword preview" />
-				</div>
+<!-- 					<img src="<?php // echo plugin_dir_url( __FILE__ ); ?>assets/img/crossword.png" class="img-fluid" alt="crossword preview" />
+-->				</div>
 
 				<div id="buttons_container" class="col-12 d-flex flex-wrap justify-content-around">
 					<button id="clue" class="mobile-hide">Clue</button>
@@ -63,8 +63,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 						<div class="header"><h3>Horizontal</h3></div>
 						<div id="horizontal_hints_container" class="card-body"></div>
 					</div>
-				</div>
-		
+				</div>	
 			</div>
 			<?php
 			return ob_get_clean();
