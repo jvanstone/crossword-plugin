@@ -41,7 +41,6 @@
   height: 30px;
   border-collapse: collapse;
   position: relative;
-  text-transform: uppercase;
 }
 #puzzle .empty {
   background-color: rgba(255, 255, 255, 0.235);
@@ -50,13 +49,11 @@
   border: 1px solid black;
   text-align: center;
   cursor: pointer;
-  text-transform: uppercase;
 }
 #puzzle .active {
   border: 2px solid #580f48;
   background-color: whitesmoke;
   color: black;
-  text-transform: uppercase;
 }
 #puzzle .question_number {
   position: absolute;
@@ -90,9 +87,12 @@
  This Container holds all the answers
 
 *******/
-#hints_container, .card {
+#hints_container {
   border: 1px solid #000;
   background-color: beige;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 /****** 
