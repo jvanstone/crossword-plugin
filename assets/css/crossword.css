@@ -111,6 +111,11 @@
       justify-content: space-around;
 }
 
+/****** 
+
+Mobile Friendly Styles for the crossword 
+
+*******/
 @media screen and (max-width: 400px) {
   #puzzle {
     margin: 0rem;
@@ -131,8 +136,8 @@
   #puzzle .square {
     margin: 0;
     padding: 0;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-collapse: collapse;
     position: relative;
   }
