@@ -21,19 +21,23 @@
 *******/
 #puzzle {
   margin: 0rem;
-  padding: 0.5rem;
+  padding: .5rem;
+  width: 100%;
   min-height: 100%;
   border: 1px solid black;
 }
+
 #puzzle th {
   padding: 0;
   border: 0 !important;
 }
+
 #puzzle td {
   position: relative;
   padding: 0;
   border: 0 !important;
 }
+
 #puzzle .square {
   margin: 0;
   padding: 0;
@@ -42,19 +46,23 @@
   border-collapse: collapse;
   position: relative;
 }
+
 #puzzle .empty {
-  background-color: rgba(255, 255, 255, 0.235);
+  background-color: rgba(182, 112, 112, 0.235);
 }
+
 #puzzle .letter {
   border: 1px solid black;
   text-align: center;
   cursor: pointer;
 }
+
 #puzzle .active {
   border: 2px solid #580f48;
   background-color: whitesmoke;
   color: black;
 }
+
 #puzzle .question_number {
   position: absolute;
   font-size: 12px;
@@ -62,12 +70,13 @@
   left: 3px;
   top: 3px;
 }
+
 #puzzle .hints {
   margin: 1rem;
 }
 
 /****** 
-
+ 
  This Container holds all the buttons
 
 *******/
@@ -83,16 +92,22 @@
 }
 
 /****** 
-
+ 
  This Container holds all the answers
 
 *******/
 #hints_container {
   border: 1px solid #000;
   background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /****** 
@@ -101,20 +116,20 @@ Hide the Crossword and show only a message and print option.
 
 
 
-
+ 
 @media screen and (max-width:400px) {
-
+ 
     #puzzle, #hints_container, .mobile-hide  { display: none !important; }
-
+  
     #puzzle-img { display: block; }
-
+    
 
     #puzzle-img p { border: 1px solid #000; }
-
+  
 }
 ******/
 /****** 
-
+ 
  To make the crossword print
 
 *******/
@@ -124,27 +139,23 @@ Hide the Crossword and show only a message and print option.
     padding: 1rem;
     border: 1px solid #000;
   }
-
   .printOnly {
     visibility: visible !important;
   }
-
   /******
-
-   The actual puzzle
-
-  *******/
+    
+     The actual puzzle
+    
+    *******/
   #puzzle {
     margin: 0rem;
-    padding: 0.5rem;
+    padding: .5rem;
     height: 100%;
     border: 1px solid black;
   }
-
   td {
     position: relative;
   }
-
   .square {
     margin: 0;
     padding: 0;
@@ -152,20 +163,16 @@ Hide the Crossword and show only a message and print option.
     height: 30px;
     position: relative;
   }
-
   .empty {
     background-color: rgba(255, 255, 255, 0.235);
   }
-
   .letter {
     text-align: center;
     cursor: pointer;
   }
-
   .active {
     border: 2px solid #580f48;
   }
-
   .question_number {
     position: absolute;
     font-size: 12px;
@@ -173,35 +180,39 @@ Hide the Crossword and show only a message and print option.
     left: 3px;
     top: 3px;
   }
-
   .hints {
     margin: 1rem;
   }
-
   /****** 
-
-   This Container holds all the buttons
-
-  *******/
+     
+     This Container holds all the buttons
+    
+    *******/
   .no-print, .post, #buttons_container {
     visibility: hidden;
     display: none;
   }
-
   /****** 
-
-   This Container holds all the answers
-
-  *******/
+     
+     This Container holds all the answers
+    
+    *******/
   #hints_container {
     border: 1px solid #000;
     background-color: beige;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
   }
-
   .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 40%;
   }
 }
+/*# sourceMappingURL=crossword.css.map */
