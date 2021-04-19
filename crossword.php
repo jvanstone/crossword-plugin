@@ -37,8 +37,8 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 		<div id="printableArea" class="alignwide">
 <!-- 			<h2 class="printOnly">Canada Info Guide - Issue 1 Crossword </h2>
 -->
-			<div id="puzzle_container" >
-				<table id="puzzle" >
+			<div id="puzzle_container" class="container-fluid">
+				<table id="puzzle" class="table-responsive">
 				</table>
 
 				<div id="buttons_container" class="col-12 d-flex flex-wrap justify-content-around">
