@@ -12,6 +12,7 @@
   margin: 1rem auto;
   padding: 1rem;
   border: 0px solid #000;
+  overflow-x: scroll;
 }
 
 /******
