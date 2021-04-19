@@ -113,24 +113,72 @@
 }
 
 
-/****** 
-
-Hide the Crossword and show only a message and print option. 
-
-
 
  
 @media screen and (max-width:400px) {
  
-    #puzzle, #hints_container, .mobile-hide  { display: none !important; }
-  
-    #puzzle-img { display: block; }
+    #puzzle {
+        margin: 0rem;
+        padding: .5rem;
+        width: 100%;
+        min-height: 100%;
+        border: 1px solid black;
+     
+        th {
+            padding: 0;
+            border: 0 !important;
+        }
+    
+        td { 
+            position:relative; 
+            padding: 0;
+            border: 0 !important;
+        }
+    
+        .square{
+            margin: 0;
+            padding: 0;
+            
+            width:15px;
+            height:15px;
+            
+            border-collapse: collapse;
+            position: relative;
+        }
+    
+        .empty{
+            background-color:rgba(182, 112, 112, 0.235);
+        }
+    
+        .letter{
+            border: 1px solid black;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        .active{ 
+            border: 2px solid rgb(88, 15, 72);
+            background-color: whitesmoke;
+            color: black;
+        }
+    
+        .question_number{
+            position: absolute;
+            font-size: 8px;
+            color: grey;
+            left: 3px;
+            top: 3px;
+        }
+    
+        .hints {
+            margin: 1rem;
+        }
+    }
     
 
-    #puzzle-img p { border: 1px solid #000; }
   
 }
-******/
+
 
 
 

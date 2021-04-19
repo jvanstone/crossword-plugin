@@ -110,24 +110,56 @@
       justify-content: space-around;
 }
 
-/****** 
-
-Hide the Crossword and show only a message and print option. 
-
-
-
- 
-@media screen and (max-width:400px) {
- 
-    #puzzle, #hints_container, .mobile-hide  { display: none !important; }
-  
-    #puzzle-img { display: block; }
-    
-
-    #puzzle-img p { border: 1px solid #000; }
-  
+@media screen and (max-width: 400px) {
+  #puzzle {
+    margin: 0rem;
+    padding: .5rem;
+    width: 100%;
+    min-height: 100%;
+    border: 1px solid black;
+  }
+  #puzzle th {
+    padding: 0;
+    border: 0 !important;
+  }
+  #puzzle td {
+    position: relative;
+    padding: 0;
+    border: 0 !important;
+  }
+  #puzzle .square {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border-collapse: collapse;
+    position: relative;
+  }
+  #puzzle .empty {
+    background-color: rgba(182, 112, 112, 0.235);
+  }
+  #puzzle .letter {
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+  }
+  #puzzle .active {
+    border: 2px solid #580f48;
+    background-color: whitesmoke;
+    color: black;
+  }
+  #puzzle .question_number {
+    position: absolute;
+    font-size: 8px;
+    color: grey;
+    left: 3px;
+    top: 3px;
+  }
+  #puzzle .hints {
+    margin: 1rem;
+  }
 }
-******/
+
 /****** 
  
  To make the crossword print
