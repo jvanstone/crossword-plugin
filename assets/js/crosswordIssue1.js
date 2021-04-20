@@ -2,7 +2,7 @@ var grid = [
 
 	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2', 0, 0, 0, 0 ],
-	[ 0, 0, 0, 0, 0, 0, '0,1', '1', '1', '1', '1', '1', '1', '1', '1,2', '1', '1', '1', 0 ],
+	[ 0, 0, 0, 0, 0, 0, '1', '1', '1', '1', '1', '1', '1', '1', '1,2', '1', '1', '1', 0 ],
 	[ 0, '9', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2', 0, 0, 0, 0,  ],
 	[ 0, '9', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '17', '17', '2,17', '17', '17', '17', 0 ],
 	[ 0, '9', 0, 0, 0, 0, '5', 0, 0, 0, 0, 0, 0, 0, '2', 0, 0, 0, 0 ],
@@ -86,11 +86,13 @@ $.each( grid, function( i ) {
 
 				if ( 'horizontal' == direction && startpos[0] == i && startpos[1] == j ) {
 					starting_number += question_number[k] + ',';
+                    console.log(question_number[k] );
 
 				} else if ( 'vertical' == direction && startpos[0] == j && startpos[1] == i ) {
 					starting_number += question_number[k] + ',';
+                    console.log(question_number[k] );
 				}
-
+                
 			}
 			if ( '' != starting_number ) {
 				question_number_span = '<span class="question_number">' + starting_number.replace( /(^,)|(,$)/g, '' ) + '</span>';
