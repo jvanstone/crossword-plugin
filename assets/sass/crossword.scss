@@ -15,8 +15,10 @@
     padding: 1rem;
 	border: 2px solid rgb(146, 95, 95);
     max-width: 800px;
-    width: 100%;
-  
+ 
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
 }
 
 /******
@@ -138,7 +140,7 @@ Mobile Friendly Styles for the crossword
     #puzzle {
         margin: 0rem;
         padding: 0rem;
-        width: 400px;
+        width: 400px !important;
         min-height: 100%;
         border: 1px solid black;
      
@@ -193,9 +195,7 @@ Mobile Friendly Styles for the crossword
             margin: 1rem;
         }
     }
-    
 
-  
 }
 
 
