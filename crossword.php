@@ -46,7 +46,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 					<button id="check" class="mobile-hide">Check</button>
 					<button id="solve" class="mobile-hide">Solve</button>
 <!-- 					<button onclick="window.print();return false;" class="mobile-show" />Print Me</button>
- -->					<button id="clear_all" class="mobile-hide">Clear All</button>
+ -->					<button id="clear_all" class="mobile-hide">Clear Line</button>
 				</div>
 
 				<div id="hints_container">
