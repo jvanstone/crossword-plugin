@@ -140,6 +140,7 @@ Mobile Friendly Styles for the crossword
     height: 15px;
     border-collapse: collapse;
     position: relative;
+    font-size: x-small;
   }
   #puzzle .empty {
     background-color: rgba(182, 112, 112, 0.235);

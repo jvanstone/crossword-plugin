@@ -16,7 +16,7 @@
  */
 function cg_crossword_scripts() {
 	wp_enqueue_style( 'cg_crossword', plugin_dir_url( __FILE__ ) . 'assets/css/crossword.css' );
-	wp_enqueue_script( 'CG-CW1', plugin_dir_url( __FILE__ ) . 'assets/js/crossword2.js', array(), null, true );
+	wp_enqueue_script( 'CG-CW1', plugin_dir_url( __FILE__ ) . 'assets/js/crosswordIssue1.js', array(), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'cg_crossword_scripts', 999 );
 
@@ -41,7 +41,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 				<table id="puzzle" class="table-responsive">
 				</table>
 
-				<div id="buttons_container" class="col-12 d-flex flex-wrap justify-content-around">
+				<div id="buttons_container">
 					<button id="clue" class="mobile-hide">Clue</button>
 					<button id="check" class="mobile-hide">Check</button>
 					<button id="solve" class="mobile-hide">Solve</button>
@@ -49,14 +49,14 @@ if ( ! function_exists( 'cg_crossword' ) ) {
  -->					<button id="clear_all" class="mobile-hide">Clear All</button>
 				</div>
 
-				<div id="hints_container" class="col-12">
-					<div class="card col-md-5 hints">
+				<div id="hints_container">
+					<div class="hints">
 						<div class="header"><h3>Vertical</h3></div>
-						<div id="vertical_hints_container" class="card-body"></div>
+						<div id="vertical_hints_container"></div>
 					</div>
-					<div class="card col-md-5 hints"> 
+					<div class="hints"> 
 						<div class="header"><h3>Horizontal</h3></div>
-						<div id="horizontal_hints_container" class="card-body"></div>
+						<div id="horizontal_hints_container"></div>
 					</div>
 				</div>	
 			</div>
