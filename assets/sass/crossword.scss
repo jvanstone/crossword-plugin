@@ -90,6 +90,7 @@
 *******/
 
 #buttons_container{
+    margin: 0 auto;
     border: 0px solid #000;
     padding: 2rem;
     max-width: 600px;
@@ -110,11 +111,13 @@
 *******/
 
 #hints_container{
+    margin: 0 auto;
 	border: 1px solid #000;
     background-color: beige;
 	display: flex;
     flex-flow: row wrap;
     max-width: 600px;
+    width: 100%;
 	justify-content: space-around;
 }
 
@@ -133,10 +136,11 @@ Mobile Friendly Styles for the crossword
         padding: 1rem;
         border: 2px solid rgb(146, 95, 95);
         max-width: 400px;
-        width: 100%;
-      
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
- 
+
     #puzzle {
         margin: 0rem;
         padding: 0rem;
