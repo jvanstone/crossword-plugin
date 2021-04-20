@@ -121,6 +121,10 @@
           flex: 40%;
 }
 
+#hints_container .hints header > h3 {
+  text-decoration: underline;
+}
+
 /****** 
 
 Mobile Friendly Styles for the crossword 
@@ -182,6 +186,24 @@ Mobile Friendly Styles for the crossword
     color: grey;
     left: 3px;
     top: 3px;
+  }
+  #puzzle #hints_container {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #puzzle .hints {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  #puzzle .hints header > h3 {
+    text-decoration: underline;
   }
 }
 

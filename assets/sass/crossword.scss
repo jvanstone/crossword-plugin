@@ -119,6 +119,10 @@
 
     .hints {
         flex: 40%;
+
+        header > h3 {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -190,7 +194,21 @@ Mobile Friendly Styles for the crossword
             left: 3px;
             top: 3px;
         }
+
+        #hints_container{
+            margin: 0 auto;
+            //border: 1px solid #000;
+            //background-color: beige;
+            display: flex;
+            flex-flow: column;
+        }
+        .hints {
+            flex: 100%;
     
+            header > h3 {
+                text-decoration: underline;
+            }
+        }
        
     }
 
