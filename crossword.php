@@ -49,12 +49,12 @@ if ( ! function_exists( 'cg_crossword' ) ) {
  -->					<button id="clear_all" class="mobile-hide">Clear All</button>
 				</div>
 
-				<div id="hints_container" class="col-12">
-					<div class="card col-md-5 hints">
+				<div id="hints_container">
+					<div class="hints">
 						<div class="header"><h3>Vertical</h3></div>
 						<div id="vertical_hints_container" class="card-body"></div>
 					</div>
-					<div class="card col-md-5 hints"> 
+					<div class="hints"> 
 						<div class="header"><h3>Horizontal</h3></div>
 						<div id="horizontal_hints_container" class="card-body"></div>
 					</div>

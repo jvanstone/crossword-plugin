@@ -4,6 +4,7 @@
   Author: Jason Vanstone
   Company: VanstoneOnline
   uses: bootstrap, css
+  Version: 1.0
 
 
 *******/
@@ -13,7 +14,6 @@
 #puzzle_container{
     margin: 1rem auto;
     padding: 1rem;
-	border: 2px solid rgb(146, 95, 95);
     max-width: 800px;
  
    display: flex;
@@ -31,7 +31,7 @@
 	padding: .5rem;
     width: 600px;
     min-height: 100%;
-	border: 4px solid black;
+	//border: 4px solid black;
  
 	th {
 		padding: 0;
@@ -56,7 +56,7 @@
 	}
 
 	.empty{
-		background-color:rgba(182, 112, 112, 0.235);
+		//background-color:rgba(182, 112, 112, 0.235);
 	}
 
 	.letter{
@@ -66,7 +66,7 @@
 	}
 
 	.active{ 
-        border: 2px solid rgb(88, 15, 72);
+        border: 1px solid rgb(88, 15, 72);
 		background-color: whitesmoke;
 		color: black;
     }
@@ -79,9 +79,6 @@
 		top: 3px;
 	}
 
-	.hints {
-		margin: 1rem;
-	}
 }
 /****** 
  
@@ -112,13 +109,17 @@
 
 #hints_container{
     margin: 0 auto;
-	border: 1px solid #000;
-    background-color: beige;
+	//border: 1px solid #000;
+    //background-color: beige;
 	display: flex;
     flex-flow: row wrap;
     max-width: 600px;
     width: 100%;
 	justify-content: space-around;
+
+    .hints {
+        flex: 40%;
+    }
 }
 
 
@@ -134,7 +135,6 @@ Mobile Friendly Styles for the crossword
     #puzzle_container{
         margin: 1rem auto;
         padding: 1rem;
-        border: 2px solid rgb(146, 95, 95);
         max-width: 400px;
         display: flex;
         flex-flow: column;
@@ -146,8 +146,7 @@ Mobile Friendly Styles for the crossword
         padding: 0rem;
         width: 300px !important;
         min-height: 100%;
-        border: 1px solid black;
-     
+        
         th {
             padding: 0;
             border: 0 !important;
@@ -171,9 +170,6 @@ Mobile Friendly Styles for the crossword
             font-size: x-small;
         }
     
-        .empty{
-            background-color:rgba(182, 112, 112, 0.235);
-        }
     
         .letter{
             border: 1px solid black;
@@ -195,9 +191,7 @@ Mobile Friendly Styles for the crossword
             top: 3px;
         }
     
-        .hints {
-            margin: 1rem;
-        }
+       
     }
 
 }
