@@ -16,7 +16,7 @@
  */
 function cg_crossword_scripts() {
 	wp_enqueue_style( 'cg_crossword', plugin_dir_url( __FILE__ ) . 'assets/css/crossword.css' );
-	wp_enqueue_script( 'CG-CW1', plugin_dir_url( __FILE__ ) . 'assets/js/crossword2.js', array(), null, true );
+	wp_enqueue_script( 'CG-CW1', plugin_dir_url( __FILE__ ) . 'assets/js/crosswordIssue1.js', array(), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'cg_crossword_scripts', 999 );
 
