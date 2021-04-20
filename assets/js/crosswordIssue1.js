@@ -85,16 +85,16 @@ $.each( grid, function( i ) {
 
 				if ( 'horizontal' == direction && startpos[0] == i && startpos[1] == j ) {
 					starting_number += question_number[k] + ',';
-                    console.log('horizontal, ', question_number[k] );
+               
 
 				} else if ( 'vertical' == direction && startpos[0] == j && startpos[1] == i ) {
 					starting_number += question_number[k] + ',';
-                    console.log('vertical, ', question_number[k] );
+                   
 				}
                 
 			}
 			if ( '' != starting_number ) {
-                console.log(starting_number);
+              
 				question_number_span = '<span class="question_number">' + starting_number.replace( /(^,)|(,$)/g, '' ) + '</span>';
 			}
 
