@@ -118,9 +118,10 @@
 	justify-content: space-around;
 
     .hints {
+        margin: 1rem;
         flex: 40%;
-
-        header > h3 {
+     
+        .header > h3 {
             text-decoration: underline;
         }
     }
@@ -196,17 +197,11 @@ Mobile Friendly Styles for the crossword
         }
 
         #hints_container{
-            margin: 0 auto;
-            //border: 1px solid #000;
-            //background-color: beige;
-            display: flex;
             flex-flow: column;
-        }
-        .hints {
-            flex: 100%;
-    
-            header > h3 {
-                text-decoration: underline;
+       
+            .hints {
+                flex: 100%;
+                border: solid 1px red;
             }
         }
        
