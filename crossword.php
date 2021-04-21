@@ -60,6 +60,7 @@ if ( ! function_exists( 'cg_crossword' ) ) {
 					</div>
 				</div>	
 			</div>
+		</div>
 			<?php
 			return ob_get_clean();
 	}
